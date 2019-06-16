@@ -1,0 +1,8 @@
+<h5>Exemplos de Pipes</h5>
+
+<p>Descrição: {{ produto.descricao | lowercase }}</p>
+<p>Data de Validade: {{ produto.validade | date:'dd-MM-yyyy' }}</p>
+<p>Preço de Custo: {{ produto.custo | currency:'BRL':true }}</p>
+<p>Preço de Venda: {{ produto.venda | currency:'BRL':true }}</p>
+<br><br>
+<p>Produto: {{ produto | json}}</p>
