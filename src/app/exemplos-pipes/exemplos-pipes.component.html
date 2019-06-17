@@ -6,3 +6,14 @@
 <p>Preço de Venda: {{ produto.venda | currency:'BRL':true }}</p>
 <br><br>
 <p>Produto: {{ produto | json}}</p>
+
+<input type="text" [(ngModel)]="filtro">
+<br>
+<input type="text" #novoValor>
+<button (click)="addCurso(novoValor.value)">Add Curso</button>
+
+<ul>
+    <li *ngFor="let l of livros | filtroArray:filtro" >
+        {{ l }}
+    </li>
+</ul>
