@@ -1,5 +1,8 @@
 <h5>Exemplos de Pipes</h5>
 
+<p>{{ valorAsync | async }}</p>
+<p>{{ valorAsync2 | async }}</p>
+
 <p>Descrição: {{ produto.descricao | lowercase | camelCase }}</p>
 <p>Data de Validade: {{ produto.validade | date }}</p>
 <p>Preço de Custo: {{ produto.custo | currency:'BRL':true }}</p>
@@ -32,3 +35,4 @@
         {{ l }}
     </li>
 </ul>
+
